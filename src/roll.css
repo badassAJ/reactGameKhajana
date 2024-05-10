@@ -1,0 +1,14 @@
+.container1{
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: 1rem;
+}
+
+.square1{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem 1rem;
+}

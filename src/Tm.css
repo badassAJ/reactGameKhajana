@@ -1,0 +1,35 @@
+.wrapper5{
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: 1rem;
+    height: 400px;
+    width: 600px;
+    background-color: red;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container5{
+    height: 150px;
+    width: 350px;
+    background-color: white;
+    float: right;
+    vertical-align: middle;
+    padding: 1rem 1rem;
+}
+
+.outputcont5{
+    height: 100px;
+    width: 150px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.square5{
+    height: 132px;
+    width: 332px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem 1rem;
+}
