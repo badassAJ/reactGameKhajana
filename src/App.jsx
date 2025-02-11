@@ -26,9 +26,8 @@ function App(){
         className="container"
         style={{
           backgroundImage: `url('/back.png')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          minHeight: "100vh",
+          backgroundSize: "cover"
+          
         }}
       ></div>
     <div className="container">
