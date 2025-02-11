@@ -26,6 +26,7 @@ function App() {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         minHeight: "100vh",
+        minWidth: "100vw",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
