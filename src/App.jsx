@@ -11,9 +11,7 @@ import Roll from './Roll.jsx';
 import Otp from './Otp.jsx';
 import AppName from './AppName.jsx';
 
-
-
-function App(){
+function App() {
   const [selectedGame, setSelectedGame] = useState('');
 
   const handleGameSelection = (game) => {
@@ -21,56 +19,61 @@ function App(){
   };
 
   return (
-    <center>
-   style={{
-          backgroundImage: `url('/back.png')`,
-          backgroundSize: "cover"
-          
-        }}
-    <div className="container">
-      <AppName></AppName>
-      <div className="game-list">
-        
-          <button type="button" class="btn btn-warning" onClick={() => handleGameSelection('RollYourDice')}>Roll Your Dice</button>
-          <button type="button" class="btn btn-warning" onClick={() => handleGameSelection('OtpGenerator')}>Otp Generator</button>
-          <button type="button" class="btn btn-warning" onClick={() => handleGameSelection('PasswordGenerator')}>Password Generator</button>
-          <button type="button" class="btn btn-warning" onClick={() => handleGameSelection('RockPaperScissors')}>RockPaperScissors</button>
-          <button type="button" class="btn btn-warning" onClick={() => handleGameSelection('TodayMenu')}>Today's Menu</button>
-          <button type="button" class="btn btn-warning" onClick={() => handleGameSelection('MyLuckyDay')}>My Lucky Day</button>
-          <button type="button" class="btn btn-warning" onClick={() => handleGameSelection('MatchMaking')}>Match-Making</button>
-          <button type="button" class="btn btn-warning" onClick={() => handleGameSelection('KnowYourGender')}>Know Your Gender</button>         
-        
-      </div>
-      {selectedGame && (
-        <div className="selected-game">
-          {renderSelectedGame(selectedGame)}
+    <div
+      style={{
+        backgroundImage: `url('/back.png')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        width: "100%",
+      }}
+    >
+      <div className="container">
+        <AppName />
+        <div className="game-list">
+          <button type="button" className="btn btn-warning" onClick={() => handleGameSelection('RollYourDice')}>Roll Your Dice</button>
+          <button type="button" className="btn btn-warning" onClick={() => handleGameSelection('OtpGenerator')}>Otp Generator</button>
+          <button type="button" className="btn btn-warning" onClick={() => handleGameSelection('PasswordGenerator')}>Password Generator</button>
+          <button type="button" className="btn btn-warning" onClick={() => handleGameSelection('RockPaperScissors')}>RockPaperScissors</button>
+          <button type="button" className="btn btn-warning" onClick={() => handleGameSelection('TodayMenu')}>Today's Menu</button>
+          <button type="button" className="btn btn-warning" onClick={() => handleGameSelection('MyLuckyDay')}>My Lucky Day</button>
+          <button type="button" className="btn btn-warning" onClick={() => handleGameSelection('MatchMaking')}>Match-Making</button>
+          <button type="button" className="btn btn-warning" onClick={() => handleGameSelection('KnowYourGender')}>Know Your Gender</button>         
         </div>
-      )}
+        {selectedGame && (
+          <div className="selected-game">
+            {renderSelectedGame(selectedGame)}
+          </div>
+        )}
+      </div>
     </div>
-
- 
-    </center>
   );
-};
+}
 
 const renderSelectedGame = (selectedGame) => {
   switch (selectedGame) {
     case 'RollYourDice':
-      return <Roll></Roll>;
+      return <Roll />;
     case 'OtpGenerator':
-      return <Otp></Otp>;
+      return <Otp />;
     case 'PasswordGenerator':
-      return <Pswd></Pswd>;
+      return <Pswd />;
     case 'RockPaperScissors':
-      return <RockPaperScissors></RockPaperScissors>;
+      return <RockPaperScissors />;
     case 'TodayMenu':
-      return <TodayMenu></TodayMenu>
+      return <TodayMenu />;
     case 'MyLuckyDay':
-      return <MyLuckyDay></MyLuckyDay>;
+      return <MyLuckyDay />;
     case 'MatchMaking':
-      return <MatchMaking></MatchMaking>;
+      return <MatchMaking />;
     case 'KnowYourGender':
-      return <KnowYourGender></KnowYourGender>;
+      return <KnowYourGender />;
     default:
       return null;
   }
