@@ -12,6 +12,7 @@ import Otp from './Otp.jsx';
 import AppName from './AppName.jsx';
 
 
+
 function App(){
   const [selectedGame, setSelectedGame] = useState('');
 
@@ -21,6 +22,15 @@ function App(){
 
   return (
     <center>
+       <div
+        className="container"
+        style={{
+          backgroundImage: `url('/back.png')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "100vh",
+        }}
+      ></div>
     <div className="container">
       <AppName></AppName>
       <div className="game-list">
