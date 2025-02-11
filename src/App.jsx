@@ -22,13 +22,11 @@ function App(){
 
   return (
     <center>
-       <div
-        style={{
+   style={{
           backgroundImage: `url('/back.png')`,
           backgroundSize: "cover"
           
         }}
-      >
     <div className="container">
       <AppName></AppName>
       <div className="game-list">
@@ -50,7 +48,7 @@ function App(){
       )}
     </div>
 
-    </div>
+ 
     </center>
   );
 };
